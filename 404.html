@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+		<meta http-equiv="Refresh" content="20; URL=http://jitu.pw">
+	  
+    <title>Custom Google Search for your websites</title>
+	
+	<script>
+  (function() {
+    var cx = '011181630213608785438:40919nf-yme';
+    var gcse = document.createElement('script');
+    gcse.type = 'text/javascript';
+    gcse.async = true;
+    gcse.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') +
+        '//www.google.com/cse/cse.js?cx=' + cx;
+    var s = document.getElementsByTagName('script')[0];
+    s.parentNode.insertBefore(gcse, s);
+  })();
+</script>
+<gcse:search></gcse:search>
+	
+
+    <style>
+      body {
+        font-family: Tahoma,sans-serif;
+        font-size: 14px;
+      }
+      input {
+        border: 1px solid  rgba(0, 0, 0, 0.5);
+      }
+	  #container {
+		border:1px solid red;
+		text-align:left;
+		width:800px;
+		height:100%;
+		margin:0px auto;
+		padding:10px;
+		
+	  }
+
+	  #header {
+		border:1px solid green;
+		width:800px;
+		margin:0px auto;
+		padding:10px;	
+		height:	25px;
+	  }
+	  
+	#custom_search {
+		float:left;
+		width:300px;
+	}
+	
+	#site_name {
+		float:left;
+		width:500px;
+		height:	25px;
+		padding-top:5px;
+	}
+		
+    </style>
+
+  </head>
+  <body>
+	<div id="header">
+		<p>Laman tidak ditemukan</p>
+		
+		<div id="site_name">Masukan kata pencarian anda</div>
+		<div id="custom_search"><gcse:searchbox></gcse:searchbox></div>
+	</div>
+	<br/><br/>
+    <div id="container">
+		<div id="search_result"><gcse:searchresults></gcse:searchresults></div>
+		Atau anda bisa kembali ke  <a href="http://sh.st/d2Qmi">Beranda</a>
+    </div>	
+  </body>
+</html>
+
+
+
